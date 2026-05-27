@@ -224,7 +224,7 @@ export function calculateBuyer(inputs: BuyerInputs): BuyerResults {
     prepaidInterest, homeownersInsurance,
     totalLenderFees, totalTitleFees, totalTaxes, totalPrepaids,
     totalClosingCosts, sellerCredit: inputs.sellerCredit,
-    otherCredits: inputs.otherCredits, otherCharges: inputs.otherCharges,
+    otherCredits: Number(inputs.otherCredits) || 0, otherCharges: Number(inputs.otherCharges) || 0,
     cashToClose, monthlyTaxes, monthlyInsurance, monthlyHOA, totalMonthlyPayment
   };
 }

@@ -46,7 +46,7 @@ const AUDIENCE = [
 
 export function LandingPage() {
   const [carouselIdx, setCarouselIdx] = useState(0);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [_mobileMenuOpen, _setMobileMenuOpen] = useState(false);
 
   const prevSlide = () => setCarouselIdx(i => (i - 1 + SCREENSHOTS.length) % SCREENSHOTS.length);
   const nextSlide = () => setCarouselIdx(i => (i + 1) % SCREENSHOTS.length);

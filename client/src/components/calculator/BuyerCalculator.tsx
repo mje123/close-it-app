@@ -42,7 +42,7 @@ export function BuyerCalculator() {
     set({ purchasePrice: v, downPayment: dp });
   };
 
-  const handleDPPct = (pct: number) => {
+  const _handleDPPct = (pct: number) => {
     const dp = Math.round(inputs.purchasePrice * (pct / 100));
     set({ downPaymentPct: pct, downPayment: dp });
   };
